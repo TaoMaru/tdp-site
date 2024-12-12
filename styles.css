@@ -190,3 +190,11 @@ a:visited {
     background-size: cover;
     background-position: 0% 80%;
 }
+.projects-inner-container {
+    width: 100%;
+}
+.audio-container {
+    border-radius: 10px;
+    background: none;
+    /* background-color: var(--secondary-bg); */
+}
