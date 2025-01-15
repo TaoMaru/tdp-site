@@ -9,21 +9,24 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <title>TD Peil</title>
+        <title>Timo Peil</title>
     </head>
     <body id="root">
         <div class="main-container flex flex-col jstart acenter" id="home">
-            <div class="nav-bar flex jspaced acenter">
-                <ul class="nav-list flex jcenter acenter">
-                    <li class="nav-item home-item flex jcenter acenter"><a class="flex jcenter acenter" href="#home">Timo Peil</a></li>
-                    <span class="nav-spacer"></span>
-                    <li class="nav-item flex jcenter acenter"><a class="flex jcenter acenter" href="#about">About</a></li>
-                    <li class="nav-item flex jcenter acenter"><a class="flex jcenter acenter" href="#projects">Projects</a></li>
-                    <li class="nav-item flex jcenter acenter"><a class="flex jcenter acenter" href="#contact">Contact</a></li>
-                </ul>
+            <div class="nav-bar-container flex jcenter acenter">
+                <div class="nav-bar flex jspaced acenter">
+                    <ul class="nav-list flex jcenter acenter">
+                        <li class="nav-item home-item flex jcenter acenter"><a class="flex jstart acenter" href="#home">Timo Peil</a></li>
+                        <span class="nav-spacer"></span>
+                        <li class="nav-item flex jcenter acenter"><a class="flex jstart acenter" href="#about">About</a></li>
+                        <li class="nav-item flex jcenter acenter"><a class="flex jstart acenter" href="#projects">Projects</a></li>
+                        <li class="nav-item flex jcenter acenter"><a class="flex jstart acenter" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="inner-content-container flex flex-col jstart acenter">
-                <div class="content-area home-container flex jcenter acenter">
+                <span id="back-to-top" class="back-to-top hidden-back-to-top">Back to Top</span>
+                <div class="content-area home-container flex jeven acenter">
                     <div class="circle-container flex jcenter acenter home-picture"></div>
                     <div class="content-box">
                         <p class="main-content">I am an audio engineer working in the Netherlands. Beginning in 2017 in my birthtown of Bergen op Zoom, 
@@ -33,48 +36,82 @@
                 <div class="floating-container main-background-container"></div>
                 <div class="content-area about-container flex flex-col jstart acenter" id="about">
                     <h2 class="content-header light-content-header jstart acenter">About</h2>
-                    <div class="about-box flex jspaced astart">
-                        <p class="main-content about-content">In 2017 Cees Schnellink gave me a chance to assist him and his engineers at Studio-T.
-                                                                <br></br>In 2019 I started studying music production and audio design at the University of arts in Utrecht (Hogeschool van de kunsten Utrecht), which I'm still associated with.
-                        </p>
-                        <!-- <p class="main-content about-content">In 2019 I started studying music production and audio design at the University of arts in Utrecht (Hogeschool van de kunsten Utrecht), which I'm still associated with.</p> -->
-                        <p class="main-content about-content">In 2023 - 2024 I set up Third Place together with Jeremy Leung, whom I met during my studying years. 
-                                                                <br></br>Third place for me was a pilot to make promotional content for young musicians, released under our YouTube channel.
-                        </p>
-                        <!-- <p class="main-content about-content">Third place for me was a pilot to make promotional content for young musicians.released under our YouTube channel.</p> -->
-                        <p class="main-content about-content">Ever since Cees gave me the chance of starting out in this field, I've been trying to repay those chances. 
-                                                                <br></br>I aim to help aspiring musicians and to create space for audio designers to discover and develop their talents. 
-                        <p class="main-content about-content">I wish to build work environments where engineers can collaborate in an "as a team, for the team" structure rather than a competitive hierarchic structure to promote professional and personal growth.</p>
+                    <div class="about-box flex jcenter astart wrap">
+                        <div class="about-section flex jspaced astart wrap">
+                            <p id="about-intro" class="main-content about-content">In 2017 Cees Schnellink gave me a chance to assist him and his engineers at Studio-T.
+                                <br></br>In 2019 I started studying music production and audio design at the University of Arts in Utrecht (Hogeschool van de Kunsten Utrecht), which I'm still associated with.
+                            </p>
+                            <p id="about-sub-intro" class="main-content about-content">Ever since Cees gave me the chance of starting out in this field, I've been trying to repay those chances. 
+                                <br></br>I aim to help aspiring musicians and to create space for audio designers to discover and develop their talents. </p>
+                        </div>
+                        <div class="about-section flex jspaced astart wrap">
+                            <p id="about-second" class="main-content about-content">In 2023 - 2024 I set up Third Place together with Jeremy Leung, whom I met during my studying years. 
+                                <br></br>Third place for me was a pilot to make promotional content for young musicians, released under our YouTube channel.
+                            </p>
+                            <p id="about-end" class="main-content about-content">I strive to build work environments where engineers can collaborate in an "as a team, for the team" structure rather than a competitive hierarchic structure to promote professional and personal growth.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="content-area projects-container flex flex-col jstart acenter" id="projects">
                     <h2 class="content-header light-content-header flex jstart acenter">Projects</h2>
-                    <div class="projects-inner-container flex flex-col jcenter acenter">
-                        <figure>
-                            <figcaption>Hearth - Dune</figcaption>
-                            <audio controls 
-                                    preload="auto"
-                                    class="audio-container">
-                                <source src="./assets/audio/Hearth-ThirdPlace-Dune.m4a"/>
-                                <source src="./assets/audio/Hearth-ThirdPlace-Dune.wav"/>
-                                <source src="./assets/audio/Hearth-ThirdPlace-Dune.mp3"/>
-                            </audio>
-                        </figure>
-                        <figure>
-                            <figcaption>Jeanquazz - Purplepee</figcaption>
-                            <audio controls
-                                    preload="auto"
-                                    class="audio-container">
-                                    <source src="./assets/audio/Jeanquazz-ThirdPlace-Purplepee.m4a"/>
-                                <source src="./assets/audio/Jeanquazz-ThirdPlace-Purplepee.wav"/>
-                                <source src="./assets/audio/Jeanquazz-ThirdPlace-Purplepee.mp3"/>
-                            </audio>
-                        </figure>
+                    <div class="projects-inner-container flex flex-row jeven astart wrap">
+                        <div class="projects-info-box flex flex-col jstart astart">
+                            <p class="main-content projects-info-content">Listed here are a few projects I have worked on.
+                                You can listen in the audio player, or view Third Place 
+                                projects on our Youtube page:
+                            </p>
+                            <div class="third-place-sample-container flex flex-col jstart-astart">
+                                <div class="third-place-item flex flex-row jstart astart">
+                                    <img class="third-place-item-icon" src="./assets/images/star-three-points-outline.svg"/>
+                                    <p class="third-place-item-text">Third Place Session with
+                                        <a href="https://www.youtube.com/watch?v=g3p9X1LKpGQ"
+                                            target="_blank"
+                                            class="third-place-link">Hearth
+                                            <img class="new-tab-icon" src="./assets/images/open_in_new.svg"/></a>
+                                    </p>
+                                </div>
+                                <div class="third-place-item flex flex-row jstart astart">
+                                    <img class="third-place-item-icon" src="./assets/images/star-three-points-outline.svg"/>
+                                    <p class="third-place-item-text">Third Place Session with 
+                                        <a href="https://www.youtube.com/watch?v=53D-kLabQ3Y"
+                                            target="_blank"
+                                            class="third-place-link">The Metropole Sound
+                                            <img class="new-tab-icon" src="./assets/images/open_in_new.svg"/></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects-sample-box flex flex-col jcenter acenter">
+                            <figure class="audio-sample-container flex flex-col jstart astart">
+                                <figcaption class="audio-caption">Isle Quartet - Lighthouse</figcaption>
+                                <audio controls 
+                                        preload="auto"
+                                        class="audio-container">
+                                    <source src="./assets/audio/IsleQuartet_Lighthouse.wav"/>
+                                </audio>
+                            </figure>
+                            <figure class="audio-sample-container flex flex-col jstart astart">
+                                <figcaption class="audio-caption">Isle Quartet - Merehaige</figcaption>
+                                <audio controls
+                                        preload="auto"
+                                        class="audio-container">
+                                    <source src="./assets/audio/IsleQuartet_Merehaige.wav"/>
+                                </audio>
+                            </figure>
+                            <figure class="audio-sample-container flex flex-col jstart astart">
+                                <figcaption class="audio-caption">Isle Quartet - This is Normal</figcaption>
+                                <audio controls
+                                        preload="auto"
+                                        class="audio-container">
+                                    <source src="./assets/audio/IsleQuartet_This is Normal.wav"/>
+                                </audio>
+                            </figure>
+                        </div>
                     </div>
                 </div>
                 <div class="floating-container second-background-container"></div>
                 <div class="content-area contact-container flex jcenter astart" id="contact">
-                    <h2 class="content-header flex jstart acenter">Contact</h2>
+                    <h2 class="content-header light-content-header flex jstart acenter">Contact</h2>
                 </div>
             </div>
             <!-- <div>
