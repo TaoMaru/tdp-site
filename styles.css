@@ -435,3 +435,56 @@ a:visited {
 .back-to-top a:hover{
     color: var(--highlight-yellow);
 }
+.contact-box {
+    width: 100%;
+    height: 100%;
+    padding: 40px 0px;
+}
+.contact-prompt,
+.contact-info-outer-container,
+.contact-info-container,
+.contact-spacer {
+    width: 100%;
+    height: 100%;
+}
+.contact-info-container {
+    gap: 20px;
+    padding: 30px 0px;
+    width: 60%;
+}
+.contact-spacer {
+    width: 40%;
+}
+.hidden-contact-spacer {
+    width: 0%;
+}
+.contact-prompt {
+    padding-left: 20%;
+}
+.small-contact-prompt {
+    padding-left: 10px;
+}
+.contact-spacer,
+.hidden-contact-spacer,
+.contact-prompt,
+.small-contact-prompt {
+    transition: all .3s ease;
+}
+.contact-me {
+    font-size: 24px;
+}
+.contact-info {
+    gap: 15px;
+}
+.contact-link,
+.contact-link a {
+    font-size: 22px;
+    color: #fff;
+}
+.contact-link a:hover {
+    color: var(--highlight-yellow);
+}
+.contact-icon {
+    width: 30px;
+    height: 30px;
+}

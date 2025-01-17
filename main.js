@@ -42,6 +42,8 @@ const aboutSecond = document.getElementById("about-second");
 const aboutEnd = document.getElementById("about-end");
 const aboutSections = document.querySelectorAll(".about-section");
 const aboutTextContent = document.querySelectorAll(".about-content");
+const contactPrompt = document.querySelector(".contact-prompt");
+const contactSpacer = document.querySelector(".contact-spacer");
 
 const setNavType = () => {
     if(screenWidth < 721){
@@ -145,6 +147,16 @@ const setAboutContent = () => {
     }
 }
 
+const toggleContactAttributes = () => {
+    if(screenWidth < 650){
+        contactPrompt.setAttribute("class", "contact-prompt small-contact-prompt");
+        contactSpacer.setAttribute("class", "contact-spacer hidden-contact-spacer");
+    }else{
+        contactPrompt.setAttribute("class", "contact-prompt");
+        contactSpacer.setAttribute("class", "contact-spacer");
+    };
+};
+
 const setAttributes = () => {
     setHomeContainerClass();
     setNavType();
@@ -153,6 +165,7 @@ const setAttributes = () => {
     // setMainTextSize();
     setAboutContent();
     toggleBackToTop();
+    toggleContactAttributes();
 }
 
 navBar.onclick = toggleMenu;
