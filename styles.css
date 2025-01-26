@@ -374,6 +374,9 @@ a:visited {
 .audio-caption {
     font-size: 18px;
 }
+.third-place-link {
+    text-decoration: underline;
+}
 .third-place-item-icon {
     width: 15px;
     height: 15px;
@@ -487,4 +490,15 @@ a:visited {
 .contact-icon {
     width: 30px;
     height: 30px;
+}
+.copyright-container {
+    width: 100%;
+    gap: 5px;
+}
+.copyright-icon {
+    width: 20px;
+    height: 20px;
+}
+.footer-text {
+    color: #fff;
 }
