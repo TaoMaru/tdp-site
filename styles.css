@@ -18,7 +18,7 @@
     font-family: "Quicksand", sans-serif;
 }
 a {
-    color: var(--main-gray);
+    color: #fff;
     text-decoration: none;
     height: 100%;
     width: 100%;
@@ -27,8 +27,7 @@ a:hover {
     color: var(--highlight-yellow);
 }
 a:visited {
-    /* color: var(--secondary-highlight-yellow); */
-    color: #fff;
+    color: var(--main-gray);
 }
 .flex {
     display: flex;
@@ -95,6 +94,9 @@ a:visited {
 }
 .nav-item a {
     text-align: left;
+}
+.nav-item a:visited {
+    color: #fff;
 }
 .home-item {
     max-width: 150px;
